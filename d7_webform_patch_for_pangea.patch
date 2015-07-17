@@ -1,0 +1,18 @@
+--- /WWW/d7_ses_maketest/sites/all/modules/webform/webform.install	2015-03-17 09:31:12.000000000 -0700
++++ webform.install	2015-06-30 17:59:08.000000000 -0700
+@@ -612,6 +612,7 @@
+   $t = get_t();
+ 
+   // Ensure cURL exists if SimpleTest hasn't checked it already.
++/*
+   if (!class_exists('ZipArchive')) {
+     $requirements['webform_zip'] = array(
+       'title' => $t('Zip archive support'),
+@@ -620,6 +621,7 @@
+       'description' => $t('PHP does not have the zip archive extension available. Webform module requires zip support for exporting submissions to Microsoft Excel.'),
+     );
+   }
++*/
+   // Though the .info file specifies PHP version as well, this will prevent
+   // users from upgrading from 3.x if their PHP version is too old.
+   if (version_compare(phpversion(), '5.3') < 0) {
