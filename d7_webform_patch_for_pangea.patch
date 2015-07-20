@@ -1,4 +1,5 @@
---- /WWW/d7_ses_maketest/sites/all/modules/webform/webform.install	2015-03-17 09:31:12.000000000 -0700
+diff -Naur a/webform.install b/webform.install
+--- webform.install	2015-03-17 09:31:12.000000000 -0700
 +++ webform.install	2015-06-30 17:59:08.000000000 -0700
 @@ -612,6 +612,7 @@
    $t = get_t();
