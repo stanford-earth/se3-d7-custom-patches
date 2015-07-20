@@ -1,6 +1,5 @@
-diff -Naur a/stanford_carousel_aria.js b/stanford_carousel_aria.js
---- stanford_carousel_aria.js	2015-07-19 16:26:32.000000000 -0700
-+++ stanford_carousel_aria.js	2015-07-16 20:27:26.000000000 -0700
+--- a/sites/all/modules/stanford_carousel/js/stanford_carousel_aria.js	2015-07-19 16:26:32.000000000 -0700
++++ b/sites/all/modules/stanford_carousel/js/stanford_carousel_aria.js	2015-07-16 20:27:26.000000000 -0700
 @@ -11,8 +11,8 @@
      this.$indicators = this.$element.find('.carousel-indicators')
      this.options = options
