@@ -1,0 +1,23 @@
+diff -Naur a/insert.js b/insert.js
+--- a/insert.js			2013-02-23 14:20:26.000000000 -0800
++++ b/insert.js			2016-04-26 16:43:02.000000000 -0700
+@@ -40,6 +40,7 @@
+     var wrapper = $(this).parents(settings.wrapper).filter(':first').get(0);
+     var style = $('.insert-style', wrapper).val();
+     var content = $('input.insert-template[name$="[' + style + ']"]', wrapper).val();
++    var caption = $(this).parents('.image-widget-data').find('textarea').val();
+     var filename = $('input.insert-filename', wrapper).val();
+     var options = {
+       widgetType: widgetType,
+@@ -102,6 +103,12 @@
+       return (tagName === 'alt') ? match : '';
+     });
+ 
++    var wrapper1 = "<div>";
++    var wrapper2 = "</div>";
++    caption = "<div class='field caption'>"+caption+"</div>";
++    content = wrapper1+content+wrapper2+caption;
++    
+     // Insert the text.
+     Drupal.insert.insertIntoActiveEditor(content);
+   }
